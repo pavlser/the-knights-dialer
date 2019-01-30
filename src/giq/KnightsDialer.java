@@ -17,21 +17,25 @@ public class KnightsDialer {
 		KnightsDialer kd = new KnightsDialer();
 		kd.printBoard();
 		
-		int len = 9;
+		boolean printNumbers = false;
 		
-		// start finding numbers
-		long time = System.currentTimeMillis();
-		List<String> numbers = kd.findNumbers(0, 0, len);
-		time = System.currentTimeMillis() - time;
-		
-		// print found numbers
-		out("\nFound " + numbers.size() + " numbers for lenght " + len + " in " + time + " ms");
-		for (int i=0; i<numbers.size(); i++) {
-			out((i+1) + ":\t" + numbers.get(i));
+		for (int len=1; len<=21; len++) {
+			// start finding numbers
+			long time = System.currentTimeMillis();
+			List<String> numbers = kd.findNumbers(0, 0, len);
+			time = System.currentTimeMillis() - time;
+			out("\nLenght: " + len + ", found numbers: " + numbers.size() + " (" + time + " ms)");
+			
+			// print found numbers
+			if (printNumbers) {
+				for (int i=0; i<numbers.size(); i++) {
+					out((i+1) + ":\t" + numbers.get(i));
+				}
+			}
+			
+			// check all numbers are unique
+			out("All numbers are distinct: " + kd.checkDistiction(numbers));
 		}
-		
-		// check all numbers are unique
-		out("\nAll numbers are distinct: " + kd.checkDistiction(numbers));
 	}
 	
 	public KnightsDialer() {
@@ -189,7 +193,7 @@ public class KnightsDialer {
 	
 	boolean checkDistiction(List<String> list) {
 		Set<String> s = new HashSet<>(list);
-		return s.size() == list.size();
+		return list.size() == s.size();
 	}
 }
 
