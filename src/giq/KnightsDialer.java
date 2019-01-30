@@ -19,7 +19,7 @@ public class KnightsDialer {
 		
 		boolean printNumbers = false;
 		
-		for (int len=1; len<=9; len++) {
+		for (int len=1; len<=21; len++) {
 			// start finding numbers
 			long time = System.currentTimeMillis();
 			List<String> numbers = kd.findNumbers(1, len);
@@ -51,7 +51,7 @@ public class KnightsDialer {
 	public List<String> findNumbers(int startKeyNumber, int phoneNumberLenght) {
 		Pos startPos = getPositionByPadNumber(startKeyNumber);
 		if (startPos != null) {
-			return makeAHop(startPos, 0, phoneNumberLenght, new LinkedList<Integer>(), new LinkedList<String>());
+			return makeAHop(startPos, phoneNumberLenght, new LinkedList<Integer>(), new LinkedList<String>());
 		} else {
 			return new LinkedList<String>();
 		}
@@ -60,16 +60,13 @@ public class KnightsDialer {
 	/**
 	 * Main method which collects passed hops as array of strings via recursion.
 	 */
-	List<String> makeAHop(Pos pos, int currDepth, int maxDepth, List<Integer> path, List<String> numbers) {
-		currDepth++;														// current depth
-		push(path, cellValue(pos));											// remember current position in path
-		if (currDepth < maxDepth) {											// check we not exceeded depth for this path
+	List<String> makeAHop(Pos pos, int maxDepth, List<Integer> path, List<String> numbers) {
+		path.add(cellValue(pos));											// add current position to the passed path
+		if (path.size() < maxDepth) {										// check we not exceeded depth for this path
 			List<Pos> nextHops = getPossibleHops(pos);						// obtain possible knight hops
 			for (Pos hop : nextHops) {										// for each found hop
-				if (!hop.equals(pos)) {										// check we not going back in path
-					List<Integer> branch = new LinkedList<>(path);			// create new branch for new hop
-					makeAHop(hop, currDepth, maxDepth, branch, numbers);	// dive into this hop recursively
-				}
+				List<Integer> branch = new LinkedList<>(path);				// create new branch for new hop
+				makeAHop(hop, maxDepth, branch, numbers);					// dive into this hop recursively
 			}
 		} else {															// else we made enough recursion
 			if (numbers.size() < Integer.MAX_VALUE) {
@@ -140,20 +137,6 @@ public class KnightsDialer {
 			}
 		}
 		return null;
-	}
-	
-	void push(List<Integer> list, int item) {
-		list.add(item);
-	}
-	
-	int pop(List<Integer> list) {
-		int res = -1;
-		int index = list.size() - 1;
-		if (index >= 0) {
-			res = list.get(index);
-			list.remove(index);
-		}
-		return res;
 	}
 	
 	public static void out(Object o) {
