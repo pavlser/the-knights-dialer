@@ -19,10 +19,10 @@ public class KnightsDialer {
 		
 		boolean printNumbers = false;
 		
-		for (int len=1; len<=21; len++) {
+		for (int len=1; len<=9; len++) {
 			// start finding numbers
 			long time = System.currentTimeMillis();
-			List<String> numbers = kd.findNumbers(0, 0, len);
+			List<String> numbers = kd.findNumbers(1, len);
 			time = System.currentTimeMillis() - time;
 			out("\nLenght: " + len + ", found numbers: " + numbers.size() + " (" + time + " ms)");
 			
@@ -42,17 +42,25 @@ public class KnightsDialer {
 		this.board = generateDialBoard();
 	}
 	
-	public List<String> findNumbers(int startX, int startY, int phoneNumberLenght) {
-		List<Integer> path = new LinkedList<Integer>();
-		List<String> numbers = new LinkedList<>();
-		makeAHop(new Pos(startX, startY), 0, phoneNumberLenght, path, numbers);
-		return numbers;
+	/**
+	 * Entry method for Knight's dialer.
+	 * @param startKeyNumber - start key number of the Knight - number of key on dial board
+	 * @param phoneNumberLenght - length of phone number to generate
+	 * @return - list of strings with phone numbers for given length
+	 */
+	public List<String> findNumbers(int startKeyNumber, int phoneNumberLenght) {
+		Pos startPos = getPositionByPadNumber(startKeyNumber);
+		if (startPos != null) {
+			return makeAHop(startPos, 0, phoneNumberLenght, new LinkedList<Integer>(), new LinkedList<String>());
+		} else {
+			return new LinkedList<String>();
+		}
 	}
 	
 	/**
-	 * Main method which collects passed hops as array of strings.
+	 * Main method which collects passed hops as array of strings via recursion.
 	 */
-	void makeAHop(Pos pos, int currDepth, int maxDepth, List<Integer> path, List<String> numbers) {
+	List<String> makeAHop(Pos pos, int currDepth, int maxDepth, List<Integer> path, List<String> numbers) {
 		currDepth++;														// current depth
 		push(path, cellValue(pos));											// remember current position in path
 		if (currDepth < maxDepth) {											// check we not exceeded depth for this path
@@ -70,6 +78,7 @@ public class KnightsDialer {
 				out("max int value exceeded for solution array size");
 			}
 		}
+		return numbers;
 	}
 	
 	/**
@@ -120,6 +129,17 @@ public class KnightsDialer {
 	 */
 	int cellValue(Pos pos) {
 		return board.get(pos.y).get(pos.x).value;
+	}
+	
+	Pos getPositionByPadNumber(int keyPadNumber) {
+		for (List<Cell> row : board) {
+			for (Cell cell : row) {
+				if (cell.value == keyPadNumber) {
+					return cell.pos;
+				}
+			}
+		}
+		return null;
 	}
 	
 	void push(List<Integer> list, int item) {
