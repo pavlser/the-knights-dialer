@@ -19,22 +19,24 @@ public class KnightsDialer {
 		
 		boolean printNumbers = false;
 		
-		for (int len=1; len<=21; len++) {
-			// start finding numbers
-			long time = System.currentTimeMillis();
-			List<String> numbers = kd.findNumbers(1, len);
-			time = System.currentTimeMillis() - time;
-			out("\nLenght: " + len + ", found numbers: " + numbers.size() + " (" + time + " ms)");
-			
-			// print found numbers
-			if (printNumbers) {
-				for (int i=0; i<numbers.size(); i++) {
-					out((i+1) + ":\t" + numbers.get(i));
+		for (int len=1; len<=9; len++) {
+			for (int key=0; key<=9; key++) {
+				// start finding numbers
+				long time = System.currentTimeMillis();
+				List<String> numbers = kd.findNumbers(key, len);
+				time = System.currentTimeMillis() - time;
+				out("\nLenght: " + len + ", start key: " + key +", found numbers: " + numbers.size() + " (" + time + " ms)");
+				
+				// print found numbers
+				if (printNumbers) {
+					for (int i=0; i<numbers.size(); i++) {
+						out((i+1) + ":\t" + numbers.get(i));
+					}
 				}
+				
+				// check all numbers are unique
+				out("All numbers are distinct: " + kd.checkDistiction(numbers));
 			}
-			
-			// check all numbers are unique
-			out("All numbers are distinct: " + kd.checkDistiction(numbers));
 		}
 	}
 	
