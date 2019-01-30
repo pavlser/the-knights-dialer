@@ -1,0 +1,275 @@
+Dial board:
+1 2 3 
+4 5 6 
+7 8 9 
+  0   
+
+Lenght: 1, start key: 0, found numbers: 1 (54 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 1, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 2, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 3, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 4, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 5, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 6, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 7, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 8, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 1, start key: 9, found numbers: 1 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 0, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 1, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 2, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 3, found numbers: 2 (1 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 4, found numbers: 3 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 6, found numbers: 3 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 7, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 8, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 2, start key: 9, found numbers: 2 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 0, found numbers: 6 (1 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 1, found numbers: 5 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 2, found numbers: 4 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 3, found numbers: 5 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 4, found numbers: 6 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 6, found numbers: 6 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 7, found numbers: 5 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 8, found numbers: 4 (0 ms)
+All numbers are distinct: true
+
+Lenght: 3, start key: 9, found numbers: 5 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 0, found numbers: 12 (1 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 1, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 2, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 3, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 4, found numbers: 16 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 6, found numbers: 16 (1 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 7, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 8, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 4, start key: 9, found numbers: 10 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 0, found numbers: 32 (1 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 1, found numbers: 26 (1 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 2, found numbers: 20 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 3, found numbers: 26 (1 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 4, found numbers: 32 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 6, found numbers: 32 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 7, found numbers: 26 (1 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 8, found numbers: 20 (0 ms)
+All numbers are distinct: true
+
+Lenght: 5, start key: 9, found numbers: 26 (0 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 0, found numbers: 64 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 1, found numbers: 52 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 2, found numbers: 52 (0 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 3, found numbers: 52 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 4, found numbers: 84 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 6, found numbers: 84 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 7, found numbers: 52 (1 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 8, found numbers: 52 (0 ms)
+All numbers are distinct: true
+
+Lenght: 6, start key: 9, found numbers: 52 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 0, found numbers: 168 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 1, found numbers: 136 (2 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 2, found numbers: 104 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 3, found numbers: 136 (0 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 4, found numbers: 168 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 6, found numbers: 168 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 7, found numbers: 136 (0 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 8, found numbers: 104 (1 ms)
+All numbers are distinct: true
+
+Lenght: 7, start key: 9, found numbers: 136 (0 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 0, found numbers: 336 (0 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 1, found numbers: 272 (0 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 2, found numbers: 272 (0 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 3, found numbers: 272 (1 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 4, found numbers: 440 (1 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 6, found numbers: 440 (2 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 7, found numbers: 272 (1 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 8, found numbers: 272 (1 ms)
+All numbers are distinct: true
+
+Lenght: 8, start key: 9, found numbers: 272 (1 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 0, found numbers: 880 (4 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 1, found numbers: 712 (3 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 2, found numbers: 544 (2 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 3, found numbers: 712 (2 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 4, found numbers: 880 (4 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 5, found numbers: 0 (0 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 6, found numbers: 880 (6 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 7, found numbers: 712 (2 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 8, found numbers: 544 (2 ms)
+All numbers are distinct: true
+
+Lenght: 9, start key: 9, found numbers: 712 (2 ms)
+All numbers are distinct: true
